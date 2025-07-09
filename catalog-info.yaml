@@ -11,7 +11,7 @@ spec:
     openapi: 3.0.0
     info:
       title: Simple API
-      version: 1.0.0
+      version: 1.0.6
     paths:
       /test:
         get:
@@ -32,6 +32,38 @@ spec:
   type: service
   owner: user:guest
   lifecycle: production
+
+---
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: nginx-api
+  description: NGINX reverse proxy API
+spec:
+  type: openapi
+  lifecycle: production
+  owner: user:guest
+  system: web-infrastructure
+  definition: |
+    openapi: 3.0.0
+    info:
+      title: NGINX API
+      version: 1.0.6
+      description: API for NGINX configuration and status
+    paths:
+      /status:
+        get:
+          summary: Get NGINX status
+          responses:
+            '200':
+              description: Server status
+      /config:
+        get:
+          summary: Get configuration
+          responses:
+            '200':
+              description: Current configuration
+
 
 # apiVersion: backstage.io/v1alpha1
 # kind: Component
