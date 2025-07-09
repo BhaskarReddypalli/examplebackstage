@@ -70,8 +70,9 @@ auth:
     guest: {}
     github:
       development:
-        clientId: Ov23li8pmD2X3PC8Obkc
-        clientSecret: a5137dcd465ffea62dec823fbc7a167160f18456
+        clientId: Ov23linzt2Ykcjk5o1S6
+        clientSecret: b87bbcdce624fb3a345d7ef61a6c32db5fa762a5
+        scopes: ['read:user','user:email']
     # See https://backstage.io/docs/auth/guest/provider
     # signIn:
     #       resolvers:

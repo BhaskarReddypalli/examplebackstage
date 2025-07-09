@@ -23,15 +23,15 @@ spec:
 apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
-	name: nginx
-	description: Example NGINX service
-	annotations:
-		backstage.io/kubernetes-id: nginx
-		kubernetes.io/managed-by: backstage
+  name: nginx
+  description: Example NGINX service
+  annotations:
+    backstage.io/kubernetes-id: nginx
+    kubernetes.io/managed-by: backstage
 spec:
-	type: service
-	owner: user:guest
-	lifecycle: production
+  type: service
+  owner: user:guest
+  lifecycle: production
 
 # apiVersion: backstage.io/v1alpha1
 # kind: Component
