@@ -69,6 +69,7 @@ auth:
   providers:
     guest: {}
     github:
+  
       development:
         clientId: Ov23linzt2Ykcjk5o1S6
         clientSecret: b87bbcdce624fb3a345d7ef61a6c32db5fa762a5
