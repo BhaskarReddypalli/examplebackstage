@@ -144,7 +144,9 @@ proxy:
     ws: true
     pathRewrite:
       '^/kubernetes/api/proxy': ''
-
+ai_server:
+  # Integrate the Chatbot UI GUI (the default, uses LocalAI server).
+  url: "http://localhost:8080/" 
 # sonarqube:
 #   baseUrl: http://10.138.77.36:9000
 #   instanceKey: bhaskar
