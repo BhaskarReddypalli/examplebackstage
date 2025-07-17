@@ -1,6 +1,7 @@
 import { Navigate, Route } from 'react-router-dom';
 import { apiDocsPlugin, ApiExplorerPage } from '@backstage/plugin-api-docs';
 import {BackchatPage} from '@benbravo73/backstage-plugin-backchat'
+import { RbacPage } from '@backstage-community/plugin-rbac';
 
 import {
   CatalogEntityPage,
@@ -81,6 +82,7 @@ const routes = (
       {entityPage}
     </Route>
     <Route path="/docs" element={<TechDocsIndexPage />} />
+    <Route path="/rbac" element={<RbacPage />} />;
     <Route
       path="/docs/:namespace/:kind/:name/*"
       element={<TechDocsReaderPage />}

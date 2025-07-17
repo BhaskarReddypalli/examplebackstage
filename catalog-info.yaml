@@ -28,6 +28,10 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: nginx
     kubernetes.io/managed-by: backstage
+    backstage.io/source-location: url:https://github.com/backstage/community-plugins/tree/main/workspaces/rbac/plugins/rbac
+    backstage.io/view-url: https://github.com/backstage/community-plugins/blob/main/workspaces/rbac/plugins/rbac/catalog-info.yaml
+    backstage.io/edit-url: https://github.com/backstage/community-plugins/edit/main/workspaces/rbac/plugins/rbac/catalog-info.yaml
+    github.com/project-slug: backstage-community/backstage-plugins
 spec:
   type: service
   owner: user:guest
