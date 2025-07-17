@@ -12,8 +12,6 @@ import {
   UserSettingsSignInAvatar,
 } from '@backstage/plugin-user-settings';
 import { SidebarSearchModal } from '@backstage/plugin-search';
-import { Administration } from '@backstage-community/plugin-rbac';
-
 import {
   Sidebar,
   sidebarConfig,
@@ -76,7 +74,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
           icon={GroupIcon}
         />
         
-        {/* <SidebarItem icon={Administration} to="rbac" text="Administration"/> */}
+        <SidebarItem icon={Administration} to="rbac" text="Administration"/>
         <SidebarItem icon={ChatIcon} to="backchat" text="Backchat AI" />
         <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
         <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />
@@ -96,7 +94,6 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
       >
         <SidebarSettings />
       </SidebarGroup>
-
     </Sidebar>
     {children}
   </SidebarPage>

@@ -155,13 +155,3 @@ ai_server:
 permission:
   # setting this to `false` will disable permissions
   enabled: true
-  rbac:
-    admin:
-      users:
-        - name: user:default/reddypallibhaskar1234
-        - name: group:default/admins
-    pluginsWithPermission:
-      - catalog
-      - scaffolder
-      - permission
-  # enabled: true
