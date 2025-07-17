@@ -34,12 +34,12 @@ spec:
   owner: user:guest
   lifecycle: production
   providesApis:
-    - nginx-info
+    - api:nginx-api
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
 metadata:
-  name: nginx-info
+  name: nginx-api
   description: NGINX reverse proxy API
 spec:
   type: openapi
@@ -49,7 +49,7 @@ spec:
   definition: |
     openapi: 3.0.0
     info:
-      title: NGINX INFO API
+      title: NGINX API
       version: 1.0.6
       description: API for NGINX configuration and status
     paths:
