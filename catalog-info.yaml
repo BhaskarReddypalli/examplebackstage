@@ -49,7 +49,7 @@ spec:
   definition: |
     openapi: 3.0.0
     info:
-      title: NGINX API
+      title: NGINX INFO API
       version: 1.0.6
       description: API for NGINX configuration and status
     paths:
@@ -59,7 +59,7 @@ spec:
           responses:
             '200':
               description: Server status
-      /config:
+      /api/v1/info:
         get:
           summary: Get configuration
           responses:
