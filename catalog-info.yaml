@@ -59,7 +59,7 @@ spec:
           responses:
             '200':
               description: Server status
-      /api/v1/info:
+      /config:
         get:
           summary: Get configuration
           responses:
