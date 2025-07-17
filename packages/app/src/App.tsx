@@ -82,7 +82,7 @@ const routes = (
       {entityPage}
     </Route>
     <Route path="/docs" element={<TechDocsIndexPage />} />
-    <Route path="/rbac" element={<RbacPage />} />;
+    {/* <Route path="/rbac" element={<RbacPage />} />; */}
     <Route
       path="/docs/:namespace/:kind/:name/*"
       element={<TechDocsReaderPage />}

@@ -8,9 +8,9 @@ organization:
   name: My Company
 
 backend:
-  baseUrl: http://localhost:7011
+  baseUrl: http://localhost:7090
   listen:
-    port: 7011
+    port: 7090
     host:  0.0.0.0
   reading:
     allow:
