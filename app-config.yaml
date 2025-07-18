@@ -92,6 +92,8 @@ catalog:
   locations:
     - type: url
       target: http://localhost:9000/catalog-info.yaml
+      - type: url
+      target: https://github.com/BhaskarReddypalli/examplebackstage/blob/main/catalog-info.yaml
     # Local example data, file locations are relative to the backend process, typically `packages/backend`
     - type: url
       target: http://localhost:9001/openapi.yaml
