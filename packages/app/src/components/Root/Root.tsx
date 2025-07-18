@@ -74,7 +74,7 @@ export const Root = ({ children }: PropsWithChildren<{}>) => (
           icon={GroupIcon}
         />
         
-        <SidebarItem icon={Administration} to="rbac" text="Administration"/>
+        {/* <SidebarItem icon={Administration} to="rbac" text="Administration"/> */}
         <SidebarItem icon={ChatIcon} to="backchat" text="Backchat AI" />
         <SidebarItem icon={ExtensionIcon} to="api-docs" text="APIs" />
         <SidebarItem icon={LibraryBooks} to="docs" text="Docs" />

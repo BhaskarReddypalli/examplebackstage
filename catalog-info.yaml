@@ -21,6 +21,24 @@ spec:
 
 ---
 apiVersion: backstage.io/v1alpha1
+kind: User
+metadata:
+  name: johndoe
+spec:
+  profile:
+    displayName: John Doe
+    email: johndoe@example.com
+  memberOf: [users]
+---
+apiVersion: backstage.io/v1alpha1
+kind: Group
+metadata:
+  name: users
+spec:
+  type: team
+  members: [johndoe]
+---
+apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: nginx
@@ -28,14 +46,13 @@ metadata:
   annotations:
     backstage.io/kubernetes-id: nginx
     kubernetes.io/managed-by: backstage
-======
->>>>>>> parent of 4453351 (rbac updating)
 spec:
   type: service
   owner: user:guest
   lifecycle: production
   providesApis:
-    - api:nginx-api
+    - nginx-api
+
 ---
 apiVersion: backstage.io/v1alpha1
 kind: API
@@ -67,7 +84,7 @@ spec:
             '200':
               description: Current configuration
 
-
+# Example for another component (commented out)
 # apiVersion: backstage.io/v1alpha1
 # kind: Component
 # metadata:
@@ -78,9 +95,7 @@ spec:
 #     sonarqube.org/project-key: bhaskar
 #   #   github.com/project-slug: backstage/backstage
 #   #   backstage.io/techdocs-ref: dir:.
-
 # spec:
 #   type: service
 #   owner: Ben Wilcock
-#   lifecycle: production
-
+#   lifecycle:

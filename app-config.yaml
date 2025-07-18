@@ -155,3 +155,9 @@ ai_server:
 permission:
   # setting this to `false` will disable permissions
   enabled: true
+  policies:
+    - allow: true
+      resourceType: catalog-entity
+      action: read
+      conditions:
+        isMemberOf: users
